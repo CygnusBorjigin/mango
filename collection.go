@@ -43,6 +43,7 @@ func (a *AtlasCollection) ListAllObject() {
 func (a *AtlasCollection) queryCollection(target []map[string]interface{}) ([][]bson.M, *string) {
 	var resData [][]bson.M
 	parsedQuery := ParseQuery(target)
+	fmt.Println(parsedQuery)
 	for _, eachQuery := range parsedQuery {
 		queryOptions := options.Find().SetProjection(eachQuery[1])
 		res, err := a.collectionClient.Find(a.collectionContext, eachQuery[0], queryOptions)

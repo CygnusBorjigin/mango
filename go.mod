@@ -3,7 +3,7 @@ module github.com/cygnusborjigin/mango
 go 1.19
 
 require (
-	github.com/cygnusborjigin/movingOn v1.1.1
+	github.com/cygnusborjigin/movingOn v1.2.4
 	go.mongodb.org/mongo-driver v1.11.3
 )
 

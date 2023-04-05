@@ -4,6 +4,14 @@ github.com/cygnusborjigin/movingOn v1.1.0 h1:vTVFOrWt2Nzx0Gcj3vwnSDjb5ki/bREBrYj
 github.com/cygnusborjigin/movingOn v1.1.0/go.mod h1:V0vqNVFH9ypsxUKtLZhCOHrts1o4jImHWXKL7ILjfVg=
 github.com/cygnusborjigin/movingOn v1.1.1 h1:ntg3pTWX88kE0nRpA4hCbbKowEdpUi0us0/C1KsyzGI=
 github.com/cygnusborjigin/movingOn v1.1.1/go.mod h1:V0vqNVFH9ypsxUKtLZhCOHrts1o4jImHWXKL7ILjfVg=
+github.com/cygnusborjigin/movingOn v1.2.1 h1:tc2NnRvYUJfyqXiBIL1F8b1WEMBYl1EN9vGLySSX/r0=
+github.com/cygnusborjigin/movingOn v1.2.1/go.mod h1:V0vqNVFH9ypsxUKtLZhCOHrts1o4jImHWXKL7ILjfVg=
+github.com/cygnusborjigin/movingOn v1.2.2 h1:N2MRbSf1ge0kBNTil6QSwJwOoOZqz6QOjSXS0U1FUkQ=
+github.com/cygnusborjigin/movingOn v1.2.2/go.mod h1:V0vqNVFH9ypsxUKtLZhCOHrts1o4jImHWXKL7ILjfVg=
+github.com/cygnusborjigin/movingOn v1.2.3 h1:qZhnqT1AlKeuhWrOc5ZY93Xzojhq1UrwpDqnWvxaBQA=
+github.com/cygnusborjigin/movingOn v1.2.3/go.mod h1:V0vqNVFH9ypsxUKtLZhCOHrts1o4jImHWXKL7ILjfVg=
+github.com/cygnusborjigin/movingOn v1.2.4 h1:fzwN4kvGhPQV8x4K47qAsUyMILHWM3DjJKzoyk+0LLY=
+github.com/cygnusborjigin/movingOn v1.2.4/go.mod h1:V0vqNVFH9ypsxUKtLZhCOHrts1o4jImHWXKL7ILjfVg=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
