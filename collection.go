@@ -16,7 +16,8 @@ type AtlasCollection struct {
 	collectionContext context.Context
 }
 
-func NewAtlasCollection(targetClient *mongo.Client, targetDatabase string, targetCollection string) AtlasCollection {
+func NewAtlasCollection(targetConnection AtlasConnection, targetDatabase string, targetCollection string) AtlasCollection {
+	targetClient := targetConnection.GetClient()
 	databaseConnection := targetClient.Database(targetDatabase)
 	collectionConnection := databaseConnection.Collection(targetCollection)
 	ctx, _ := context.WithTimeout(context.Background(), 10*time.Second)
