@@ -4,10 +4,11 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
+	"time"
+
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
-	"time"
 )
 
 type AtlasCollection struct {
@@ -37,13 +38,11 @@ func (a *AtlasCollection) ListAllObject() {
 	if err = res.All(a.collectionContext, &parsedRes); err != nil {
 		fmt.Println(err)
 	}
-	fmt.Println(parsedRes)
 }
 
 func (a *AtlasCollection) queryCollection(target []map[string]interface{}) ([][]bson.M, *string) {
 	var resData [][]bson.M
 	parsedQuery := ParseQuery(target)
-	fmt.Println(parsedQuery)
 	for _, eachQuery := range parsedQuery {
 		queryOptions := options.Find().SetProjection(eachQuery[1])
 		res, err := a.collectionClient.Find(a.collectionContext, eachQuery[0], queryOptions)
