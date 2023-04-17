@@ -26,24 +26,24 @@ Read query can be issued though an already created connection client. To simplif
 
 To issue read query, use the `GetObject()` method of a collection object.
 
+Note, the query passed into the `GetObject()` has to be of type `[]map[string]interface{}`
+
 ```go
 import "gethub.com/cygnusborjigin/mango"
 
 connectionClient := mango.NewAtlasConnection("<connection string>")
 collection := mango.NewAtlasCollection(connectionClient, "<database name>", "<collection name>")
-res := collection.GetObject(parsedFilters)
+res := collection.GetObject(<query>)
 ```
 
 ## Example Query
 
 ```json
-{
-  "filter": [
+[
         {
           "state": "Massachusetts",
           "population": ">2500",
           "returnField": ["state", "city", "population"]
         }
-      ]
-}
+]
 ```
